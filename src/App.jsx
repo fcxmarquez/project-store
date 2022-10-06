@@ -1,6 +1,6 @@
-import React from "react";
-import { AppWrapper } from "./app.styles";
+import React from 'react';
+import { AppWrapper } from './app.styles';
 
-export const App = () => {
-  return <AppWrapper>App</AppWrapper>;
-};
+const App = () => <AppWrapper>App</AppWrapper>;
+
+export default App;
