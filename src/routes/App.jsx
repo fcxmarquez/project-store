@@ -8,6 +8,8 @@ import {
   NotFound,
   Success,
 } from '../Views';
+import { Layout } from '../components/Layout/Layout';
+import GlobalStyle from '../styles/GlobalStyle';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
@@ -18,4 +20,9 @@ const router = createBrowserRouter([
   { path: '*', element: <NotFound /> },
 ]);
 
-export const App = () => <RouterProvider router={router} />;
+export const App = () => (
+  <Layout>
+    <GlobalStyle />
+    <RouterProvider router={router} />
+  </Layout>
+);
